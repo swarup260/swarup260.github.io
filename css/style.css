@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers|Lobster|Roboto+Slab");
+/* Mobile */
+/* tablets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+
+header {
+  background: #FC3C45;
+  overflow: hidden;
+  height: 100px;
+}
+
+@media only screen and (max-width: 460px) {
+  header {
+    height: 50px;
+  }
+}
+
+header div#title {
+  float: left;
+}
+
+header div#title h1 {
+  font-family: "Bangers", cursive;
+  font-size: 50px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+@media only screen and (max-width: 460px) {
+  header div#title h1 {
+    font-size: 20px;
+  }
+}
+
+header div#title h1 span {
+  font-size: 55px;
+  color: #0B2577;
+}
+
+header div#title h1 span:hover {
+  transition: color 3s;
+  color: #FFF200;
+}
+
+@media only screen and (max-width: 460px) {
+  header div#title h1 span {
+    font-size: 25px;
+  }
+}
+
+header i.fa-bars {
+  float: right;
+  position: relative;
+  display: none;
+}
+
+@media only screen and (max-width: 460px) {
+  header i.fa-bars {
+    font-size: 25px !important;
+    display: inline;
+    color: #ffffff;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  header i.fa-bars {
+    font-size: 50px;
+    display: inline;
+    color: #ffffff;
+  }
+}
+
+header i.fa-bars:hover {
+  color: #0B2577;
+}
+
+@media only screen and (max-width: 460px) {
+  header nav.topnav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  header nav.topnav {
+    display: none;
+  }
+}
+
+header nav.topnav ul {
+  list-style: none;
+  float: right;
+}
+
+header nav.topnav ul li {
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  right: 40px;
+}
+
+header nav.topnav ul li a {
+  font-size: 25px;
+  color: #0B2577;
+  text-decoration: none;
+  text-align: center;
+}
+
+header nav.topnav ul li a:hover {
+  color: #EEE200;
+}
+
+/*Search Bar */
+section.searchbar form {
+  float: right;
+  padding: 4px;
+}
+
+section.searchbar form input[type="text"] {
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: left;
+  width: 250px;
+}
+
+section.searchbar form input[type="text"]:focus {
+  width: 260px;
+}
+
+section.searchbar form button {
+  background: none;
+  border: none;
+  text-align: center;
+  padding: 5px 6px;
+}
+
+section.searchbar form button i {
+  font-size: 25px;
+  color: #0B2577;
+}
+
+/* Main */
+/* Testing */
+/* Testing 
+*
+*
+*
+*
+*
+*/
+/* Footer */
+footer {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+  /* End OF DIV  */
+}
+
+footer div[class*='col-'] {
+  height: 200px;
+  background: #FC3C45;
+  /* End Of col-1 */
+  /* End Of col-2 */
+  /* End Of col-3 */
+}
+
+@media only screen and (max-width: 460px) {
+  footer div[class*='col-'] {
+    height: 100px;
+  }
+}
+
+footer div[class*='col-'].col-1 h2 {
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 460px) {
+  footer div[class*='col-'].col-1 h2 {
+    font-size: 15px;
+  }
+}
+
+footer div[class*='col-'].col-1 h2 span {
+  color: #0B2577;
+}
+
+footer div[class*='col-'].col-1 h2 span:hover {
+  transition: color 3s;
+  color: #FFF200;
+}
+
+footer div[class*='col-'].col-2 {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div[class*='col-'].col-2 h2 a {
+  font-size: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+footer div[class*='col-'].col-2 h2 a:hover {
+  color: #042FBA;
+}
+
+@media only screen and (max-width: 460px) {
+  footer div[class*='col-'].col-2 h2 a {
+    font-size: 15px;
+  }
+}
+
+footer div[class*='col-'].col-3 nav {
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 460px) {
+  footer div[class*='col-'].col-3 nav {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  footer div[class*='col-'].col-3 nav {
+    margin-top: 20px;
+  }
+}
+
+footer div[class*='col-'].col-3 nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+footer div[class*='col-'].col-3 nav ul li {
+  display: inline-block;
+}
+
+footer div[class*='col-'].col-3 nav ul a {
+  font-size: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+footer div[class*='col-'].col-3 nav ul a:hover {
+  color: #042FBA;
+}
+
+@media only screen and (max-width: 460px) {
+  footer div[class*='col-'].col-3 nav ul a {
+    font-size: 15px;
+    margin: 4px 6px !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  footer div[class*='col-'].col-3 nav ul a {
+    margin: 4px 6px !important;
+  }
+}
+
+footer div[class*='col-'].col-3 h2 {
+  margin-top: 20px;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lobster", cursive;
+}
+
+@media only screen and (max-width: 460px) {
+  footer div[class*='col-'].col-3 h2 {
+    margin-top: 5px;
+    font-size: 20px;
+  }
+}
+
+footer div[class*='col-'].col-3 span {
+  font-family: "Bangers", cursive;
+  color: #ffffff;
+}
+
+footer div[class*='col-'].col-3 span:hover {
+  transition: color 3s;
+  color: #FFF200;
+}
+
+/* End OF footer */
+header div#title h1, header i.fa-bars, header nav.topnav ul li a, footer div[class*='col-'].col-1 h2, footer div[class*='col-'].col-3 nav ul a {
+  margin: 14px 16px;
+}
+
+section.searchbar {
+  margin: 8px 10px;
+}
+
+/* Mobile */
+/* tablets */
+/*# sourceMappingURL=style.css.map */
