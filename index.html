@@ -9,11 +9,20 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
+    <header> <!-- Header -->
         <div id="title">
             <h1>Learn <span>Python</span></h1>
         </div>
         <i class="fa fa-bars" aria-hidden="true" id="meun"></i>
+        <div class="responsive" id="navMobile">
+            <nav class="nav-responsive">
+                <button id="btn">&times;</button>
+                <a href="index.html">home</a>
+                <a href="tutorials.html">tutorials</a>
+                <a href="Examples.html">Examples</a>
+                <a href="Posts.html">Posts</a>
+            </nav>
+        </div>
         <nav class="topnav">
             <ul>
                 <li>
@@ -30,28 +39,19 @@
                 </li>
             </ul>
         </nav>
-    </header>
+    </header> <!--  End of Header -->
+    <section id="showcase"> <!--  Showcase -->
+        <h1>
+            Python Programming
+        </h1>
+        <p>Learn to <span>Code</span> in <span>Easy</span> way .</p>
+    </section> <!--  End of Showcase -->
         <section class="searchbar">
             <form action="#">
                     <input type="text" name="searchtext" placeholder="SEARCH TOPIC">
-                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                 </form>
         </section>
-    <main>
-            <div class="column">
-                <ul>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                </ul>
-            </div>
+    <main class="grid2"> 
             <div class="postcol">
                 <section class="post">
                     <!--Post Section -->
@@ -204,7 +204,7 @@
                 </section>
                 <!--Post Section End -->
             </div>
-            <div class="column">
+            <div class="side">
                 <img src="./img/#" alt="python">
                 <h2>Lorem, ipsum dolor.</h2>
                 <p>
@@ -221,6 +221,9 @@
             <h2>
                 &copy;2017 Learn
                 <span>Python</span>
+            </h2>
+            <h2>
+                <a href="aboutme.html">About Me</a>
             </h2>
         </div>
         <div class="col-2">
@@ -240,7 +243,7 @@
                 </ul>
             </nav>
             <h2>
-                Design By: <span>Swarup</span>
+                Created By: <span>Swarup</span>
             </h2>
         </div>
     </footer>

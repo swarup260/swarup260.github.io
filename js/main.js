@@ -1,9 +1,13 @@
-var menu = document.getElementById('meun');
-var nav = document.getElementById('nav');
-meun.addEventListener('click', function myFunction() {
-    if (nav.className === "topnav") {
-        nav.className += " responsive";
+var meun = document.getElementById('meun');
+var nav = document.getElementById('navMobile');
+var btn = document.getElementById('btn');
+meun.addEventListener('click', function () {
+    if (nav.style.display == "none") {
+        nav.style.display = "block";
     } else {
-        nav.className = "topnav";
+        nav.style.display = "none";
     }
+});
+btn.addEventListener('click', function () {
+    nav.style.display = "none";
 });

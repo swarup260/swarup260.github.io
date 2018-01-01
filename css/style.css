@@ -12,6 +12,8 @@ header {
   background: #FC3C45;
   overflow: hidden;
   height: 100px;
+  /*  Mobile navbar */
+  /*  End OF Navbar*/
 }
 
 @media only screen and (max-width: 460px) {
@@ -67,7 +69,7 @@ header i.fa-bars {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   header i.fa-bars {
     font-size: 50px;
     display: inline;
@@ -79,13 +81,55 @@ header i.fa-bars:hover {
   color: #0B2577;
 }
 
+header div.responsive {
+  background: #000;
+  opacity: 0.8;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: none;
+}
+
+header div.responsive nav.nav-responsive {
+  font-size: 40px;
+  float: left;
+  overflow-x: hidden;
+}
+
+header div.responsive nav.nav-responsive button#btn {
+  position: absolute;
+  right: 0;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 50px;
+}
+
+header div.responsive nav.nav-responsive button#btn:hover {
+  color: #AD0009;
+}
+
+header div.responsive nav.nav-responsive a {
+  padding: 10px;
+  display: block;
+  color: #AD0009;
+  text-decoration: none;
+  text-align: center;
+}
+
+header div.responsive nav.nav-responsive a:hover {
+  color: #ffffff;
+}
+
 @media only screen and (max-width: 460px) {
   header nav.topnav {
     display: none;
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   header nav.topnav {
     display: none;
   }
@@ -114,21 +158,104 @@ header nav.topnav ul li a:hover {
   color: #EEE200;
 }
 
+/* Showcase */
+section#showcase {
+  background: #000000;
+  -webkit-filter: sepia(1);
+  filter: sepia(1);
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+section#showcase h1 {
+  font-family: "Lobster", cursive;
+  font-size: 50px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+@media only screen and (max-width: 460px) {
+  section#showcase h1 {
+    font-size: 30px;
+    margin: 4px 6px;
+  }
+}
+
+section#showcase h1 span {
+  font-size: 55px;
+  color: #0B2577;
+}
+
+section#showcase h1 span:hover {
+  transition: color 3s;
+  color: #FFF200;
+}
+
+@media only screen and (max-width: 460px) {
+  section#showcase h1 span {
+    font-size: 25px;
+    margin: 4px 6px;
+  }
+}
+
+section#showcase p {
+  font-family: "Roboto Slab", serif;
+  font-size: 40px;
+  color: #ffffff;
+  padding: 2px 4px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+section#showcase p span {
+  color: #FC3C45;
+}
+
+@media only screen and (max-width: 460px) {
+  section#showcase p {
+    font-size: 20px;
+  }
+}
+
+/*  END Showcase */
 /*Search Bar */
+section.searchbar {
+  clear: both;
+}
+
 section.searchbar form {
-  float: right;
+  float: left;
   padding: 4px;
 }
 
 section.searchbar form input[type="text"] {
-  border: none;
-  border-bottom: 1px solid black;
-  text-align: left;
-  width: 250px;
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #ffffff;
+  background-image: url("../img/search.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
 }
 
 section.searchbar form input[type="text"]:focus {
-  width: 260px;
+  width: 100%;
 }
 
 section.searchbar form button {
@@ -143,7 +270,69 @@ section.searchbar form button i {
   color: #0B2577;
 }
 
-/* Main */
+/* Main  HomePaGe*/
+main.grid2 {
+  clear: both;
+  display: -ms-grid;
+  display: grid;
+  background: #ffffff;
+  opacity: 0.5;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "main main sidebar";
+  grid-gap: 1em;
+  height: auto;
+}
+
+@media only screen and (max-width: 460px) {
+  main.grid2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "main main" "sidebar sidebar";
+  }
+}
+
+main.grid2 div.postcol {
+  grid-area: main;
+  /*  Section Post */
+}
+
+main.grid2 div.postcol section.post {
+  /*  Section Post */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 1, 0.4);
+}
+
+main.grid2 div.postcol section.post div.line {
+  border: 1px black solid;
+  margin: 1px 2px;
+}
+
+main.grid2 div.postcol section.post h2 {
+  text-shadow: 2px 2px 4px #000000;
+  transition: all 0.2s;
+}
+
+main.grid2 div.postcol section.post h2:hover {
+  color: #FC3C45;
+}
+
+main.grid2 div.postcol section.post p a {
+  color: #0B2577;
+  text-decoration: none;
+  text-align: center;
+}
+
+main.grid2 div.postcol section.post p a:hover {
+  color: #EEE200;
+}
+
+main.grid2 div.postcol section.post p a:hover {
+  text-decoration: underline;
+}
+
+main.grid2 div.side {
+  grid-area: sidebar;
+}
+
 /* Testing */
 /* Testing 
 *
@@ -152,8 +341,91 @@ section.searchbar form button i {
 *
 *
 */
+/*
+* Contact Form
+*
+*/
+section.contact {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FC3C45;
+  opacity: 0.7;
+}
+
+section.contact form {
+  background: #e6e6e6;
+  margin: 20px;
+  height: 65vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 460px) {
+  section.contact form {
+    margin: 8px;
+  }
+}
+
+section.contact form label {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+section.contact form input {
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 460px) {
+  section.contact form input {
+    padding: 5px;
+  }
+}
+
+section.contact form input:focus {
+  border: 2px solid #4263CD;
+}
+
+section.contact form input[type="submit"] {
+  border-radius: 2px;
+  background: #4263CD;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+section.contact form input[type="submit"]:hover {
+  background: #0B2577;
+}
+
+section.contact form textarea {
+  padding: 20px;
+  padding-right: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 15px 18px;
+}
+
+section.contact form textarea:focus {
+  border: 2px solid #4263CD;
+}
+
+/* ENd */
+/*
+*
+End Of section
+*
+*/
 /* Footer */
 footer {
+  clear: both;
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -182,7 +454,7 @@ footer div[class*='col-'].col-1 h2 {
 
 @media only screen and (max-width: 460px) {
   footer div[class*='col-'].col-1 h2 {
-    font-size: 15px;
+    font-size: 10px;
   }
 }
 
@@ -193,6 +465,29 @@ footer div[class*='col-'].col-1 h2 span {
 footer div[class*='col-'].col-1 h2 span:hover {
   transition: color 3s;
   color: #FFF200;
+}
+
+footer div[class*='col-'].col-1 h2 a {
+  margin-top: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+footer div[class*='col-'].col-1 h2 a:hover {
+  color: #042FBA;
+}
+
+@media only screen and (max-width: 460px) {
+  footer div[class*='col-'].col-1 h2 a {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  footer div[class*='col-'].col-1 h2 a {
+    font-size: 20px !important;
+  }
 }
 
 footer div[class*='col-'].col-2 {
@@ -237,7 +532,7 @@ footer div[class*='col-'].col-3 nav {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   footer div[class*='col-'].col-3 nav {
     margin-top: 20px;
   }
@@ -270,7 +565,7 @@ footer div[class*='col-'].col-3 nav ul a:hover {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   footer div[class*='col-'].col-3 nav ul a {
     margin: 4px 6px !important;
   }
@@ -311,12 +606,119 @@ footer div[class*='col-'].col-3 span:hover {
 }
 
 /* End OF footer */
-header div#title h1, header i.fa-bars, header nav.topnav ul li a, footer div[class*='col-'].col-1 h2, footer div[class*='col-'].col-3 nav ul a {
+/* 
+*
+Grid 3 Layout
+*
+*
+*/
+div.grid3 {
+  clear: both;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* End */
+  /* End */
+}
+
+@media only screen and (max-width: 460px) {
+  div.grid3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  div.grid3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+div.grid3 div.cols {
+  /* start */
+  color: #ccc;
+  grid-column: span 3;
+}
+
+@media only screen and (max-width: 460px) {
+  div.grid3 div.cols {
+    grid-column-start: auto;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  div.grid3 div.cols {
+    grid-column-start: auto;
+  }
+}
+
+div.grid3 div.cols ul.ul-card {
+  list-style: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+}
+
+div.grid3 div.cols ul.ul-card li {
+  width: 100%;
+  padding: 14px 16px;
+  border-bottom: 1px solid black;
+}
+
+div.grid3 div.cols ul.ul-card li:last-child {
+  border: none;
+}
+
+div.grid3 div.cols ul.ul-card li:hover {
+  background: #FC3C45;
+}
+
+div.grid3 div.card {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+div.grid3 div.card h2.card-title {
+  padding: 4px 6px;
+  background: #FC3C45;
+  color: #ffffff;
+}
+
+div.grid3 div.card p.card-content {
+  padding: 10px 15px;
+}
+
+div.grid3 div.card p.card-content a {
+  font-size: 20px;
+  color: #FC3C45;
+  text-decoration: none;
+  text-align: center;
+}
+
+div.grid3 div.card p.card-content a:hover {
+  color: #042FBA;
+}
+
+/* Grid class End */
+/* 
+*
+
+End OF 
+Grid 3 Layout
+*
+*
+*/
+header div#title h1, header i.fa-bars, header div.responsive nav.nav-responsive button#btn, header div.responsive nav.nav-responsive a, header nav.topnav ul li a, main.grid2 div.postcol section.post, main.grid2 div.postcol section.post h2, main.grid2 div.postcol section.post p, main.grid2 div.side, section.contact form label, section.contact form input, footer div[class*='col-'].col-1 h2, footer div[class*='col-'].col-3 nav ul a, div.grid3 div.cols, div.grid3 div.card {
   margin: 14px 16px;
 }
 
 section.searchbar {
   margin: 8px 10px;
+}
+
+section#showcase {
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Mobile */
