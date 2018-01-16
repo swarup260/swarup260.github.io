@@ -528,3 +528,17 @@ Grid 3 Layout
 *
 *
 */
+
+/* Post of clock */
+
+div#clock{
+    margin:20px 0 30px 0;
+    clear: both;
+    text-align: center;
+    p{
+        color: $color-primary-1;
+        font-family: $ffamily-1;
+        font-size: 50px;
+        background: $color-secondary-1-0;
+    }
+}

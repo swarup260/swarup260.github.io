@@ -706,6 +706,20 @@ Grid 3 Layout
 *
 *
 */
+/* Post of clock */
+div#clock {
+  margin: 20px 0 30px 0;
+  clear: both;
+  text-align: center;
+}
+
+div#clock p {
+  color: #AD0009;
+  font-family: "Lobster", cursive;
+  font-size: 50px;
+  background: #042FBA;
+}
+
 header div#title h1, header i.fa-bars, header div.responsive nav.nav-responsive button#btn, header div.responsive nav.nav-responsive a, header nav.topnav ul li a, main.grid2 div.postcol section.post, main.grid2 div.postcol section.post h2, main.grid2 div.postcol section.post p, main.grid2 div.side, section.contact form label, section.contact form input, footer div[class*='col-'].col-1 h2, footer div[class*='col-'].col-3 nav ul a, div.grid3 div.cols, div.grid3 div.card {
   margin: 14px 16px;
 }
