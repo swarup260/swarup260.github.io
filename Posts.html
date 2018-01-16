@@ -99,7 +99,7 @@
     <script src="./js/main.js"></script>
     <script>
         const p_time = querySelector('#time');
-    startTime(){
+        function   startTime(){
         let today = new Date();
         let h = today.getHours();
         let m = today.getMinutes();
@@ -109,7 +109,7 @@
          p_time.innerHTML = h + ":"+ m + ":" + s; 
         var t = setTimeout(startTime, 500);
     }
-        checkTime (i)=>{
+        function checkTime (i)=>{
             if(i <10){
                 i = "0" + i;
             }
