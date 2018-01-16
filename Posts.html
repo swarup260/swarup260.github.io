@@ -107,7 +107,7 @@
          m = checkTime(m); 
          s = checkTime(s);
          p_time.innerHTML = h + ":"+ m + ":" + s; 
-        var timeOut = (startTime,500);
+        var t = setTimeout(startTime, 500);
     }
         checkTime (i)=>{
             if(i <10){
