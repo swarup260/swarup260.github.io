@@ -50,6 +50,7 @@
         </form>
     </section><!-- End Section -->
     <main> <!--Main -->
+        <p id="time"></p>
     </main><!-- End Main -->
     <footer><!--Footer -->
         <div class="col-1">
@@ -96,6 +97,28 @@
         </div>
     </footer><!-- End Footer -->
     <script src="./js/main.js"></script>
+    <script>
+        const p_time = querySelector('#time');
+    startTime(){
+        let today = new Date();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        let s = today.getSeconds();
+         m = checkTime(m); 
+         s = checkTime(s);
+         p_time.innerHTML = h + ":"+ m + ":" + s; 
+        var timeOut = (startTime,500);
+    }
+        checkTime (i)=>{
+            if(i <10){
+                i = "0" + i;
+            }
+            return i;
+        }
+        
+       startTime();
+       
+    </script>
 </body>
 
 </html>
