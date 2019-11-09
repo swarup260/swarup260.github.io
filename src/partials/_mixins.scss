@@ -1,0 +1,20 @@
+@mixin achorTag($color1,$color2){
+    color: $color1;
+    text-decoration: none;
+    text-align: center;
+    &:hover{
+        color: $color2;
+    }
+}
+
+@mixin Flex-center(){
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    
+}
