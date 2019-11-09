@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab&display=swap");
+section#showcase {
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.redirect {
+  text-align: center;
+  font-size: 20px;
+}
+.redirect a {
+  text-decoration: none;
+  color: #757575;
+}
+.redirect a:hover {
+  text-decoration: underline;
+  color: #212121;
+}
+
+.connect-me-icons {
+  list-style: none;
+}
+.connect-me-icons li {
+  float: right;
+  font-size: 20px;
+  padding: 20px 15px;
+}
+.connect-me-icons li:hover {
+  color: #757575;
+}
+
+.footer-icons li:hover {
+  color: #FFFFFF;
+}
+
+.section-title {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #212121;
+  position: relative;
+  font-size: 2.2em;
+  font-weight: 900;
+  margin: 20px 0 30px 0;
+  text-align: center;
+}
+.section-title::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  height: 1px;
+  width: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: #3498;
+}
+
+.time-period {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 15px;
+  font-size: 15px;
+}
+
+.timeline {
+  position: relative;
+}
+.timeline .timeline-event {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.timeline .timeline-event .timeline-content {
+  position: relative;
+  width: calc(50% - 50px);
+}
+.timeline .timeline-event::before {
+  display: block;
+  content: "";
+  width: 2px;
+  height: calc(50% - 30px);
+  position: absolute;
+  background: #d2d2d2;
+  left: calc(50% - 1px);
+  top: 0;
+}
+.timeline .timeline-event::after {
+  display: block;
+  content: "";
+  width: 2px;
+  height: calc(50% - 30px);
+  position: absolute;
+  background: #d2d2d2;
+  left: calc(50% - 1px);
+  top: calc(50% + 30px);
+}
+.timeline .timeline-event:first-child::before, .timeline .timeline-event:last-child::after {
+  display: none;
+}
+.timeline .timeline-event:nth-child(even) .timeline-content {
+  margin-left: calc(50% + 50px);
+}
+.timeline .timeline-event:nth-child(odd) .timeline-content {
+  margin-left: 0;
+}
+.timeline .timeline-badge {
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #d2d2d2;
+  top: calc(50% - 8px);
+  right: calc(50% - 8px);
+  border-radius: 50%;
+  text-align: center;
+  cursor: default;
+}
+.timeline .timeline-badge i {
+  font-size: 25px;
+  line-height: 40px;
+}
+
+@media (max-width: 600px) {
+  .timeline .timeline-event .timeline-content {
+    width: calc(100% - 70px);
+  }
+  .timeline .timeline-event::before, .timeline .timeline-event::after {
+    left: 19px;
+  }
+  .timeline .timeline-event:nth-child(even) .timeline-content, .timeline .timeline-event:nth-child(odd) .timeline-content {
+    margin-left: 70px;
+  }
+  .timeline .timeline-badge {
+    left: 12px;
+  }
+}
+.card-title {
+  line-height: 1em;
+}
+.card-title.gradient {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  padding-bottom: 64px;
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  background: linear-gradient(to bottom, rgba(125, 185, 232, 0) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+/*=================================================================
+                            SHOWCASE 
+   ================================================================
+*/
+section#showcase {
+  background: #03A9F4;
+  color: #FFFFFF;
+  height: 100vh;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section#showcase h1 {
+  text-align: center;
+  font-size: 10vh;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+}
+section#showcase span {
+  font-size: 50px;
+  font-family: "Roboto Slab", serif;
+}
+section#showcase ul {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/*=================================================================
+                        END OF SHOWCASE 
+   ================================================================
+*/
+/*=================================================================
+                            NAVBAR 
+   ================================================================
+*/
+.nav-wrapper {
+  background: #0288D1;
+}
+
+/*=================================================================
+                        END OF NAVBAR 
+   ================================================================
+*/
+/*=================================================================
+                        MAIN 
+   ================================================================
+*/
+main {
+  margin-bottom: 0px !important;
+}
+
+/*=================================================================
+                        END OF MAIN 
+   ================================================================
+*/
+/*=================================================================
+                        ABOUT ME 
+   ================================================================
+*/
+/*=================================================================
+                        END OF ABOUT ME 
+   ================================================================
+*/
+/*=================================================================
+                        Experience 
+   ================================================================
+*/
+/*=================================================================
+                        END OF Experience 
+   ================================================================
+*/
+/*=================================================================
+                        END OF Education 
+   ================================================================
+*/
+/*=================================================================
+                        Education 
+   ================================================================
+*/
+/*=================================================================
+                        SKILLS 
+   ================================================================
+*/
+#skills {
+  font-family: "Roboto Mono", monospace;
+}
+#skills ul {
+  list-style: none;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 800px;
+}
+#skills ul li {
+  display: inline-block;
+  margin: 7px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  color: #212121;
+  background: #c2c2c2;
+  list-style: none;
+  cursor: default;
+  font-size: 1.2em;
+}
+
+/*=================================================================
+                      END OF  SKILLS 
+   ================================================================
+*/
+/*=================================================================
+                     END OF  CONTACT
+
+   ================================================================
+*/
+#contact {
+  overflow: hidden;
+  text-align: center;
+}
+#contact h2 {
+  font-size: 30px;
+}
+#contact a {
+  color: #FFFFFF;
+}
+
+/*=================================================================
+                     END OF  CONTACT
+   ================================================================
+*/
+/*=================================================================
+                        FOOTER 
+   ================================================================
+*/
+footer {
+  background: #FFEB3B;
+  overflow: hidden;
+}
+footer h5 {
+  padding: 20px 25px;
+  text-align: center;
+}
+footer ul {
+  margin: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*=================================================================
+                        END OF FOOTER 
+   ================================================================
+*/
+
+/*# sourceMappingURL=/style.97fcb138.css.map */
