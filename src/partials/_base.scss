@@ -43,8 +43,9 @@ section#showcase {
 */
 .nav-wrapper {
   background: $primary-color-dark;
-
 }
+
+
 
 /*=================================================================
                         END OF NAVBAR 
@@ -72,6 +73,11 @@ main {
    ================================================================
 */
 
+#about {
+  p{
+    font-size: 25px;
+  }
+}
 
 
 
@@ -154,8 +160,9 @@ main {
 #contact{
   overflow: hidden;
   text-align: center;
-  h2{
+  h4{
     font-size: 30px;
+    letter-spacing: 2px;
   }
   a{
     color: $primary-color-text;
@@ -173,8 +180,9 @@ main {
 */
 
 footer {
-  background: $accent-color;
+  background: $primary-color;
   overflow: hidden;
+  bottom: 0;
 
   h5 {
     padding: 20px 25px;

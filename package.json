@@ -6,14 +6,17 @@
   "scripts": {
     "start": "parcel ./src/index.html",
     "watch": "parcel watch ./src/index.html",
-    "publish": "build"
+    "publish": "parcel build ./src/index.html",
+    "build": "gh-pages -d dist"
   },
+  "homepage": "https://swarup260.github.io/",
   "author": "swarup260",
   "license": "MIT",
   "dependencies": {
     "parcel-bundler": "^1.12.4"
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "sass": "^1.23.1"
   }
 }

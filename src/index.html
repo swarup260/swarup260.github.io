@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -19,8 +20,8 @@
     <section id="showcase">
         <ul class="connect-me-icons">
             <li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
-            <li><i class="fa fa-google" aria-hidden="true"></i></i></li>
-            <li><i class="fa fa-stack-overflow" aria-hidden="true"></i></i></i></li>
+            <li><i class="fa fa-google" aria-hidden="true"></i></li>
+            <li><i class="fa fa-stack-overflow" aria-hidden="true"></i></li>
             <li><i class="fa fa-github" aria-hidden="true"></i></li>
             <li><i class="fa fa-angellist" aria-hidden="true"></i></li>
         </ul>
@@ -39,12 +40,12 @@
                 <!-- <li> <a href="#home">Home</a> </li> -->
                 <!-- <li> <a href="#services">Services</a> </li> -->
                 <!-- <li> <a href="#blogs">Blogs</a> </li> -->
-                <li> <a href="#about">About</a> </li>
-                <li> <a href="#education">Education</a> </li>
-                <li> <a href="#experience">Experience</a> </li>
-                <li> <a href="#skills">Skills</a> </li>
-                <li> <a href="#work">Work</a> </li>
-                <li> <a href="#contact">Contact</a> </li>
+                <li> <a class="nav-item" href="#about">About</a> </li>
+                <li> <a class="nav-item" href="#education">Education</a> </li>
+                <li> <a class="nav-item" href="#experience">Experience</a> </li>
+                <li> <a class="nav-item" href="#skills">Skills</a> </li>
+                <li> <a class="nav-item" href="#work">Work</a> </li>
+                <li> <a class="nav-item" href="#contact">Contact</a> </li>
             </ul>
         </div>
     </nav>
@@ -62,10 +63,10 @@
     <!-- Main Content -->
     <main class="row">
         <!-- About -->
-        <div class="white lighten-3">
+        <div class="white lighten-3" >
             <section id="about" class="container">
                 <h2 class="section-title">About Me</h2>
-                <p>Self-motivated Web Developer with high level of experience working on multiple projects. Passionate
+                <p class="center-align">Self-motivated Web Developer with high level of experience working on multiple projects. Passionate
                     and
                     hardworking with penchant for meeting deadlines</p>
             </section>
@@ -78,7 +79,7 @@
                 <div class="container">
                     <div class="timeline">
 
-                        <div class="timeline-event">
+                        <div class="timeline-event" data-aos="fade-right">
                             <div class="card timeline-content">
                                 <div class="card-content blue white-text">
                                     <h3>TechSevin</h3>
@@ -99,7 +100,7 @@
                         </div>
 
 
-                        <div class="timeline-event">
+                        <div class="timeline-event" data-aos="fade-left">
                             <div class="card timeline-content">
                                 <div class="card-content blue white-text">
                                     <h3>TechSevin</h3>
@@ -153,7 +154,7 @@
                     <li>REST API</li>
                     <li>MongoDB</li>
                     <li>MYSQL</li>
-                    <li></i>ExpressJS</li>
+                    <li>ExpressJS</li>
                     <li>Web Scraping</li>
                     <li>Git</li>
                     <li>Flutter</li>
@@ -167,9 +168,10 @@
             <section id="work" class="container">
                 <h2 class="section-title">My Work</h2>
                 <!-- Project 1 -->
-                <div class="card horizontal">
-                    <div class="card-image">
-                        <img src="https://lorempixel.com/120/200/nature/6">
+                <div class="card horizontal" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom">
+                    <div class="card-image hide-on-small-only">
+                        <!-- <img src="https://lorempixel.com/120/200/nature/6"> -->
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
@@ -184,8 +186,9 @@
                     </div>
                 </div>
                 <!-- Project 2 -->
-                <div class="card horizontal">
-                    <div class="card-image ">
+                <div class="card horizontal" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom">
+                    <div class="card-image hide-on-small-only">
                         <img src="https://lorempixel.com/100/190/nature/6">
                     </div>
                     <div class="card-stacked">
@@ -203,9 +206,10 @@
                 </div>
 
                 <!-- Project 3 -->
-                <div class="card horizontal">
-                    <div class="card-image">
-                        <img src="https://lorempixel.com/100/190/nature/6">
+                <div class="card horizontal" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom">
+                    <div class="card-image hide-on-small-only">
+                        <!-- <img src="https://lorempixel.com/100/190/nature/6"> -->
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
@@ -219,8 +223,9 @@
                 </div>
 
                 <!-- Project 4 -->
-                <div class="card horizontal">
-                    <div class="card-image">
+                <div class="card horizontal" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom">
+                    <div class="card-image hide-on-small-only">
                         <img src="https://lorempixel.com/100/190/nature/6">
                     </div>
                     <div class="card-stacked">
@@ -239,30 +244,39 @@
             </section>
         </div>
 
-        <!-- Contact -->
-        <div class="light-blue">
-            <section id="contact" class="container">
-                <h2>Contact Me:<span><a href="mailto:">swarup260@gmail.com</a></span> </h2>
-            </section>
-        </div>
-
     </main>
 
     <!-- Footer -->
     <footer>
-        <!-- Copyright Text -->
-        <div class="footer-copyright container">
-            <h5 id="copyright">
-            </h5>
+        <div class="row">
+            <div class="col s12">
+                <!-- Connect ME-->
+                <ul class="icons-lg center-align footer-icons">
+                    <li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-google" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-stack-overflow" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-github" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-angellist" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+            <div class="col s12">
+                <!-- Contact -->
+                <section id="contact">
+                        <h4 class="center-align">Get in touch :
+                            <!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->
+                            <a href="mailto:swarup260@gmail.com">swarup260@gmail</a>
+                        </h4>
+                </section>
+            </div>
+            <div class="col s12">
+                <!-- Copyright Text -->
+                <div class="footer-copyright container">
+                    <h5 id="copyright">
+                    </h5>
+                </div>
+            </div>
         </div>
-        <!-- Connect ME-->
-        <ul class="connect-me-icons footer-icons">
-            <li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
-            <li><i class="fa fa-google" aria-hidden="true"></i></i></li>
-            <li><i class="fa fa-stack-overflow" aria-hidden="true"></i></i></i></li>
-            <li><i class="fa fa-github" aria-hidden="true"></i></li>
-            <li><i class="fa fa-angellist" aria-hidden="true"></i></li>
-        </ul>
+
     </footer>
 
 
@@ -270,7 +284,11 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="index.js"></script>
+    <script>
+         AOS.init();
+    </script>
 </body>
 
 </html>
