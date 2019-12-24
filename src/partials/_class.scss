@@ -30,8 +30,11 @@
 
 .footer-icons {
   li {
-    &:hover {
-      color: $primary-color-text;
+    a {
+      color: $secondary-text-color;
+      &:hover {
+        color: $primary-color-text;
+      }
     }
   }
 }
