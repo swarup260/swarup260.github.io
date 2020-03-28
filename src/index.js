@@ -1,6 +1,10 @@
 
 $(document).ready(function(){
   $('.sidenav').sidenav();
+  $('.carousel').carousel({
+    fullWidth: true,
+    indicators: true
+  });
 });
 
 const copyrighttText = document.querySelector('#copyright');
