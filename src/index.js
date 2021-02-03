@@ -2,6 +2,10 @@ import data from './projects.json'
 
 $(document).ready(function () {
   $('.sidenav').sidenav();
+  $('.carousel').carousel({
+    fullWidth: true,
+    indicators: true
+  });
 });
 
 /* render projects */
