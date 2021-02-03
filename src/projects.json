@@ -1,0 +1,82 @@
+{
+	"projects": [{
+			"name": "Sultan-Center",
+			"description": "Online grocery shop",
+			"url": "https://www.sultan-center.com/",
+			"keyPoints": [
+				"Build REST API for mobile application & order management system.",
+				"Integration of Elastic-Search for catalog listing page.",
+				"Upgradation and maintenance.",
+				"Split database"
+			],
+			"technologyUsed": "Magento 2, JavaScript and MySQL.",
+			"order": "4"
+		},
+		{
+			"name": "OPS",
+			"description": "Order Management System ",
+			"url": "#",
+			"keyPoints": [
+				"Build REST API with JWT for mobile application.",
+				"Middleware interceptor.",
+				"Report Management System.",
+				"Upgradation and maintenance."
+			],
+			"technologyUsed": "Laravel 5.4,Slim 3,JavaScript,MySQL and MongoDB",
+			"order": "2"
+		},
+		{
+			"name": "Alessa Online",
+			"description": "Health Care website",
+			"url": "https://www.alessaonline.com/",
+			"keyPoints": [
+				"Build REST API for mobile application",
+				"Product Management cron.",
+				"Upgradation and maintenance "
+			],
+			"technologyUsed": "Magento 2, JavaScript and MySQL.",
+			"order": "6"
+		},
+		{
+			"name": "Seniority",
+			"description": "Health care website for senior citizens",
+			"url": "https://www.seniority.in/",
+			"keyPoints": [
+				"GTM and DTM integration.",
+				"Upgradation and maintenance",
+				"Social Login Integration",
+				"Shipping Management "
+			],
+			"technologyUsed": "Magento 2, JavaScript and MySQL.",
+			"order": "5"
+		},
+		{
+			"name": "Rscoder",
+			"description": "Tech Blogging Website",
+			"url": "https://www.rscoder.com/",
+			"keyPoints": [
+				"WordPress installation and maintenance",
+				"Google Analytics integration"
+
+			],
+			"technologyUsed": "Wordpress",
+			"order": "3"
+		},
+		{
+			"name": "ShareBuddyApp",
+			"description": "App, where you can get the information about local commuter (auto/taxi) sharing points.",
+			"url": "https://play.google.com/store/apps/details?id=com.sharebuddyapp.sharebuddyapp",
+			"keyPoints": [
+				"Build REST API with JWT",
+				"Hybrid Mobile Application.",
+				"Build Landing Page website"
+
+			],
+			"technologyUsed": "NodeJS(ExpressJS), Flutter, MongoDB and PHP.",
+			"order": "1"
+		}
+
+
+
+	]
+}
