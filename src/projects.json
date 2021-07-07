@@ -23,7 +23,7 @@
 				"Upgradation and maintenance."
 			],
 			"technologyUsed": "Laravel 5.4,Slim 3,JavaScript,MySQL and MongoDB",
-			"order": "2"
+			"order": "3"
 		},
 		{
 			"name": "Alessa Online",
@@ -73,6 +73,16 @@
 
 			],
 			"technologyUsed": "NodeJS(ExpressJS), Flutter, MongoDB and PHP.",
+			"order": "2"
+		},
+		{
+			"name": "Airpay Vyaapaar",
+			"description": "All Banking and Payment Services under one roof!",
+			"url": "https://vyaapaar.airpay.co.in/",
+			"keyPoints": [
+				"GraphQl API"
+			],
+			"technologyUsed": "NodeJS, GraphQL ,MYSQL, AWS Lambda",
 			"order": "1"
 		}
 
