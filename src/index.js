@@ -6,6 +6,7 @@ $(document).ready(function () {
     fullWidth: true,
     indicators: true
   });
+  $('.tooltipped').tooltip();
 });
 
 /* render projects */
